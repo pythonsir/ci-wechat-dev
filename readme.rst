@@ -9,11 +9,9 @@ CI用的类库。目前只接入微信支付中的公众号支付。
 效果截图
 *******************
 
-![截图1]
-(https://github.com/pythonsir/ci-wechat-dev/blob/master/screenshot/WechatIMG11.png)  
+![](https://github.com/pythonsir/ci-wechat-dev/blob/master/screenshot/WechatIMG11.png)  
 
-![截图2]
-(https://github.com/pythonsir/ci-wechat-dev/blob/master/screenshot/WechatIMG12.png)  
+![](https://github.com/pythonsir/ci-wechat-dev/blob/master/screenshot/WechatIMG12.jpeg)  
 
 **************************
 配置
