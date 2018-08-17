@@ -1,0 +1,115 @@
+body{
+    background-color: #f3f3f3;
+    padding-bottom: 1.6rem;
+}
+
+.banner-cont{
+
+    position: relative;
+    background-color: rgba(223,36,19,.8);
+}
+
+.banner-hd{
+
+    padding: 0.4rem;
+
+}
+.banner-hd-title{
+    color: #fff;
+    font-size: 16px;
+}
+.mod-tabbar{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 0.2rem 0 rgba(34,42,63,.1);
+    z-index: 90;
+}
+.mod-tabbar a{
+
+    color: #687684;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,.03);
+    outline: none;
+}
+
+.mod-tabbar-item{
+
+    width: 50%;
+    flex: 1;
+    display: flex;
+    height: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.mod-tabbar-icon{
+
+    display: block;
+    margin: 0 auto;
+    width: .75rem;
+    height: .75rem;
+    fill: #687684;
+
+}
+.mod-tabbar-txt{
+
+    margin-top: .03rem;
+    font-size: 0.37rem;
+    line-height: 1.2;
+}
+.clr_dft {
+    color: #df2413;
+}
+
+.footBar-m{
+    flex: 1;
+}
+
+.footBar-dft{
+
+    padding: .08rem .16rem .08rem .16rem;
+
+}
+
+.footBar .button {
+    display: block;
+    line-height: .48rem;
+    font-size: .14rem;
+    padding: 0;
+}
+
+.button{
+
+    display: block;
+    line-height: 1.28rem;
+    font-size: .46rem;
+    width: 7rem;
+    padding: 0;
+    vertical-align: top;
+    margin: 0 auto;
+    padding: 0 .35rem;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    background-color: #df2413;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.02rem 0.1rem rgba(124,39,53,.5);
+
+}
+.weui-toast{
+
+    width: 3rem;
+    min-height: 3rem;
+    margin-left:-1.5rem;
+
+}
+.weui-toast__content{
+    font-size: 0.37rem;
+}

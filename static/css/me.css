@@ -1,0 +1,229 @@
+body{
+
+    height: 100%;
+    font-family: 'PingFang SC',tahoma,arial,'helvetica neue','hiragino sans gb','microsoft yahei',sans-serif;
+    font-size: .14rem;
+    line-height: 1.5;
+    color: #687684;
+    background-color: #f4f5fb;
+    text-size-adjust: 100%!important;
+    overflow-x: hidden;
+
+}
+
+#pageContainer{
+
+    height: 100%;
+}
+
+.page-user {
+    padding-bottom: .6rem;
+}
+
+.page {
+    position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.page-user header {
+    position: relative;
+    padding-top: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.page-user header:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223,36,19,.8);
+}
+
+.page-user .lay-box-head {
+    position: relative;
+    margin-top: -33%;
+}
+
+.page-user .lay-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: .42rem;
+    margin-right: .42rem;
+    background-color: #fff;
+    box-shadow: 0 0.05rem 0.21rem 0 rgba(34,42,63,.1);
+    padding-top: 0.4rem;
+    padding-bottom: .4rem;
+}
+
+.list{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list .list-header,.list-body{
+
+    flex: 1;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+.list .list-header{
+
+    font-size: .37rem;
+    border-bottom: 1px solid ;
+    padding-bottom: 0.13rem;
+
+}
+
+.list-body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem;
+    padding-top: 0.13rem;
+}
+.list-body .row{
+    flex: 1;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: .13rem 0rem .13rem 0rem;
+}
+
+.list .list-header div,.list-body .row div{
+
+    width: 25%;
+    text-align: center;
+
+
+}
+
+[v-cloak]{
+    display: none;
+}
+
+.weui-toast{
+
+    width: 3rem;
+    min-height: 3rem;
+    margin-left:-1.5rem;
+
+}
+.weui-toast__content{
+    font-size: 0.37rem;
+}
+
+
+.imgwarper{
+
+}
+.imgwarper img{
+
+    width: 2.7rem;
+    border-radius: 50%;
+    box-shadow: 0 0.05rem 0.21rem 0 rgba(34,42,63,.1);
+
+}
+.nickname{
+    font-size: .42rem;
+}
+
+#userAchievements {
+    position: relative;
+    margin-top: .4rem;
+}
+
+.g-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: .16rem;
+}
+.g-flex-m {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.g-flex-m h3{
+    font-size: .53rem;
+    color: #222a3f;
+    font-weight: 500;
+    float: left;
+    padding-left: .4rem;
+}
+
+.mod-tabbar{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 0.2rem 0 rgba(34,42,63,.1);
+    z-index: 90;
+}
+.mod-tabbar a{
+
+    color: #687684;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,.03);
+    outline: none;
+}
+
+.mod-tabbar-item{
+
+    width: 50%;
+    flex: 1;
+    display: flex;
+    height: 1.6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.mod-tabbar-icon{
+
+    display: block;
+    margin: 0 auto;
+    width: .75rem;
+    height: .75rem;
+    fill: #687684;
+
+}
+.mod-tabbar-txt{
+
+    margin-top: .03rem;
+    font-size: 0.37rem;
+    line-height: 1.2;
+}
+.clr_dft {
+    color: #df2413;
+}
