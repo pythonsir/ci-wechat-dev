@@ -6,10 +6,14 @@ ci-wechat-dev 这个项目是在CodeIgniter的框架上整合了微信支付官�
 CI用的类库。目前只接入微信支付中的公众号支付。
 
 *******************
-案例
+效果截图
 *******************
 
+![截图1]
+(https://github.com/pythonsir/ci-wechat-dev/blob/master/screenshot/WechatIMG11.png)  
 
+![截图2]
+(https://github.com/pythonsir/ci-wechat-dev/blob/master/screenshot/WechatIMG12.png)  
 
 **************************
 配置
