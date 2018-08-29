@@ -18,6 +18,7 @@ class Order_model  extends CI_Model
     public $headimgurl;
     public $ispay;
     public $out_trade_no;
+    public $updatedAt;
 
     const ORDER_STATUS_PAY_OK = 1;
 
@@ -34,7 +35,7 @@ class Order_model  extends CI_Model
                 $this->username = $this->input->post("username");
                 $this->phone = $this->input->post("phone");
                 $this->money = $this->input->post("money");
-                $this->createdAt = time();
+                $this->createdAt = date("Y-m-d H:i:s",time());
                 $this->nickname = $this->session->nickname;
                 $this->openid = $this->session->openid;
                 $this->ispay= Order_model::ORDER_STATUS_PAY_NO;
@@ -72,7 +73,7 @@ class Order_model  extends CI_Model
             }else{
 
                 $this->load->library('Wechat_SDK');
-                $url = $this->wechat_sdk->_CreateOauthUrlForCode();
+                $url = $this->wechat_sdk->_CreateOauthUrlForCode('http://'.$_SERVER['SERVER_NAME'].'/index.php/welcome/getOpenid/');
                 Header("Location: $url");
                 exit();
             }
@@ -119,7 +120,7 @@ class Order_model  extends CI_Model
 
         $this->db->where('out_trade_no', $out_trade_no);
 
-        $this->db->update('order', array("ispay"=>self::ORDER_STATUS_PAY_OK));
+        $this->db->update('order', array("ispay"=>self::ORDER_STATUS_PAY_OK,"updatedAt" => date("Y-m-d H:i:s",time()) ));
 
     }
 
@@ -149,7 +150,7 @@ class Order_model  extends CI_Model
                     "username"=>$rs["username"],
                     "phone"=>$rs["phone"],
                     "money"=>$rs["money"],
-                    "createdAt"=>date("Y-m-d H:i",$rs['createdAt']),
+                    "createdAt"=>$rs['createdAt'],
                 );
 
             }
