@@ -8,8 +8,6 @@ application/logs/*
 
 !application/*/.htaccess
 
-application/config/database.php
-application/config/wechat_sdk.php
 
 
 composer.lock
@@ -33,3 +31,5 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 /tests/tests/
 /tests/results/
+/application/config/wechat_sdk.php
+/application/config/database.php
